@@ -14,6 +14,14 @@
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
 
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <!-- 2. Configure SystemJS -->
     <script>
       System.config({
@@ -31,7 +39,30 @@
 
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <nav>
+      <div class="nav-wrapper teal lighten-2">
+        <div class="brand-logo">Moodr: Music that conforms to your mood.</a>   
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Thing 1</a></li>
+            <li><a href="#">Thing 1</a></li>
+            <li><a href="#">Thing 1</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <br>
+
+    <div class="row">
+      <div class="col s12 teal lighten-3"> Look at this beautiful header thing</div>
+      <div class="col s3 grey">ARTIST</div>
+      <div class="col s3 grey">SONG</div>
+      <div class="col s3 grey">ALBUM</div>
+      <div class="col s3 grey">LENGTH</div>
+    </div>
   </body>
 </html>
 
