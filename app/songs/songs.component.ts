@@ -2,11 +2,11 @@ import {Component} from 'angular2/core';
 import {FirebaseService} from './lib/firebase';
 
 @Component({
-    selector: 'my-app',
-    templateURL: 'app/app.html',
+    selector: 'SongsComponent',
+    templateURL: 'app/songs/songs.html',
 })
 export class SongsComponent {
-    trackInfo: Array<any> = [];
+    public trackInfo: Array<any> = [];
     isLoading: boolean = false;
 
     constructor(private fs: FirebaseService) {
