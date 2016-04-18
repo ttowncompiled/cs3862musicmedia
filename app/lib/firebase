@@ -1,10 +1,26 @@
 /// <reference path="typings/firebase/firebase.d.ts" />
 import {Injectable} from 'angular2/core';
+import {Observable, Observer} from 'rxjs/Rx';
 
 @Injectable()
 export class FirebaseService {
-  dataRef: Firebase;
+	dataRef: Firebase;
   
-  constructor() {
-    this.dataRef = new Firebase('https://musicmedia.firebaseIO.com');
+	constructor() {
+    	this.dataRef = new Firebase('https://musicmedia.firebaseIO.com');
+ 	}
+
+public watchMusic(ext: string): Observable<any> {
+    return Observable.create((observer: Observer<any>) => {
+        this.dataRef.child(ext).on('value', (snapshot: FirebaseDataSnapshot) => {
+          observer.onNext(snapshot.val());
+        });
+      })
+      .map((val: Array<any>) => {
+        if (val == null) {
+          return [];
+        }
+        return val;
+      });
   }
+}
