@@ -27,10 +27,9 @@ System.register(['angular2/core', './lib/firebase'], function(exports_1, context
                     this.fs = fs;
                     this.trackInfo = [];
                     this.isLoading = false;
-                    fs.dataRef.child('music').on('value', function (snapshot) {
-                        if (snapshot) {
-                            _this.trackInfo = Object.keys(snapshot.val());
-                        }
+                    fs.watchMusic().subscribe(function (music) {
+                        if (music === void 0) { music = any; }
+                        return _this.trackInfo = music;
                     });
                 }
                 SongsComponent = __decorate([

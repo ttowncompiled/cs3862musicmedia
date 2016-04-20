@@ -10,11 +10,7 @@ export class SongsComponent {
     isLoading: boolean = false;
 
     constructor(private fs: FirebaseService) {
-        fs.dataRef.child('music').on('value', (snapshot: DataSnapshot) => {
-            if (snapshot) {
-                this.trackInfo = Object.keys(snapshot.val());
-            }
-        });
+        fs.watchMusic().subscribe( (music: []any) => this.trackInfo = music );
     }
 
 }
