@@ -35,7 +35,7 @@ System.register(['angular2/core', 'rxjs/Rx'], function(exports_1, context_1) {
                         .map(function (val) { return val ? val : []; });
                 };
                 FirebaseService.MUSIC = 'music';
-                FirebaseService.VAL = 'val';
+                FirebaseService.VAL = 'value';
                 FirebaseService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [])

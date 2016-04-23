@@ -5,7 +5,7 @@ import { Observable, Observer } from 'rxjs/Rx';
 export class FirebaseService {
   
   static MUSIC: string = 'music';
-  static VAL: string = 'val';
+  static VAL: string = 'value';
   
   dataRef: Firebase;
 
