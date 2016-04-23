@@ -28,11 +28,7 @@ System.register(['angular2/core', './songs/songs.component'], function(exports_1
                     core_1.Component({
                         selector: 'my-app',
                         templateUrl: 'app/app.html',
-<<<<<<< HEAD
-                        directives: []
-=======
                         directives: [songs_component_1.SongsComponent]
->>>>>>> 359184d6b9cf01ed49d1409c2a787860f3b6748e
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
