@@ -1,0 +1,18 @@
+<table class="highlight">
+  <thead>
+    <tr>
+      <th data-field="track">Track Name</th>
+      <th data-field="artist">Artist</th>
+      <th data-field="genre">Genre</th>
+      <th data-field="length">Track Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="#track-info of trackInfo">
+      <td>{{track-info.name}}</td>
+      <td>{{track-info.artist}}</td>
+      <td>{{track-info.genre}}</td>
+      <td>{{track-info.length}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -5,5 +5,4 @@ import {Component} from 'angular2/core';
     templateURL: 'app/app.html',
     directives: [SongsComponent]
 })
-export class AppComponent { }
-
+export class AppComponent {}
