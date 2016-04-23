@@ -2,8 +2,8 @@ import {Component} from 'angular2/core';
 
 @Component({
     selector: 'my-app',
-    templateURL: 'app/app.html',
-    directives: [SongsComponent]
+    templateUrl: 'app/app.html',
+    directives: []
 })
 export class AppComponent { }
 
