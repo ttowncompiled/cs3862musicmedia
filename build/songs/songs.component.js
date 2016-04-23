@@ -1,4 +1,4 @@
-System.register(['angular2/core', './songs/songs.component'], function(exports_1, context_1) {
+System.register(['angular2/core', '../lib/firebase.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,36 +10,35 @@ System.register(['angular2/core', './songs/songs.component'], function(exports_1
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, songs_component_1;
-    var AppComponent;
+    var core_1, firebase_service_1;
+    var SongsComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (songs_component_1_1) {
-                songs_component_1 = songs_component_1_1;
+            function (firebase_service_1_1) {
+                firebase_service_1 = firebase_service_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            SongsComponent = (function () {
+                function SongsComponent(fs) {
+                    var _this = this;
+                    this.fs = fs;
+                    this.trackInfo = [];
+                    this.fs.watchMusic().subscribe(function (music) { return _this.trackInfo = music; });
                 }
-                AppComponent = __decorate([
+                SongsComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
-                        templateUrl: 'app/app.html',
-<<<<<<< HEAD
-                        directives: []
-=======
-                        directives: [songs_component_1.SongsComponent]
->>>>>>> 359184d6b9cf01ed49d1409c2a787860f3b6748e
+                        selector: 'songs-component',
+                        templateUrl: 'app/songs/songs.html',
                     }), 
-                    __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                    __metadata('design:paramtypes', [firebase_service_1.FirebaseService])
+                ], SongsComponent);
+                return SongsComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("SongsComponent", SongsComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=songs.component.js.map
