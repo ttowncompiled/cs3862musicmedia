@@ -1,4 +1,4 @@
-System.register(['angular2/core', './lib/firebase'], function(exports_1, context_1) {
+System.register(['angular2/core', '../lib/firebase.service'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,15 +10,15 @@ System.register(['angular2/core', './lib/firebase'], function(exports_1, context
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, firebase_1;
+    var core_1, firebase_service_1;
     var SongsComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (firebase_1_1) {
-                firebase_1 = firebase_1_1;
+            function (firebase_service_1_1) {
+                firebase_service_1 = firebase_service_1_1;
             }],
         execute: function() {
             SongsComponent = (function () {
@@ -26,21 +26,16 @@ System.register(['angular2/core', './lib/firebase'], function(exports_1, context
                     var _this = this;
                     this.fs = fs;
                     this.trackInfo = [];
-                    this.isLoading = false;
-                    fs.watchMusic().subscribe(function (music) {
-                        if (music === void 0) { music = any; }
-                        return _this.trackInfo = music;
-                    });
+                    this.fs.watchMusic().subscribe(function (music) { return _this.trackInfo = music; });
                 }
                 SongsComponent = __decorate([
                     core_1.Component({
-                        selector: 'SongsComponent',
-                        templateURL: 'app/songs/songs.html',
+                        selector: 'songs-component',
+                        templateUrl: 'app/songs/songs.html',
                     }), 
-                    __metadata('design:paramtypes', [(typeof (_a = typeof firebase_1.FirebaseService !== 'undefined' && firebase_1.FirebaseService) === 'function' && _a) || Object])
+                    __metadata('design:paramtypes', [firebase_service_1.FirebaseService])
                 ], SongsComponent);
                 return SongsComponent;
-                var _a;
             }());
             exports_1("SongsComponent", SongsComponent);
         }

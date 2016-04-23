@@ -1,16 +1,16 @@
-import {Component} from 'angular2/core';
-import {FirebaseService} from './lib/firebase';
+import { Component } from 'angular2/core';
+import { FirebaseService } from '../lib/firebase.service';
 
 @Component({
-    selector: 'SongsComponent',
-    templateURL: 'app/songs/songs.html',
+    selector: 'songs-component',
+    templateUrl: 'app/songs/songs.html',
 })
 export class SongsComponent {
-    public trackInfo: Array<any> = [];
-    isLoading: boolean = false;
+    
+    trackInfo: Array<any> = [];
 
-    constructor(private fs: FirebaseService) {
-        fs.watchMusic().subscribe( (music: []any) => this.trackInfo = music );
+    constructor(public fs: FirebaseService) {
+        this.fs.watchMusic().subscribe( (music: any[]) => this.trackInfo = music );
     }
 
 }
