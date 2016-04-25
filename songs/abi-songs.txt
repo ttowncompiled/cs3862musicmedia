@@ -1,0 +1,12 @@
+{songs: [
+    { genre: "Folk Rock", name: "Broken Crown", artist: "Mumford and Sons", length: 256 },
+    { genre: "Hip-Hop", name: "U don't get me", artist: "Gnash", length: 208 },
+    { genre: "Alternative", name: "Every Other Freckle", artist: "Alt-J", length: 216 },
+    { genre: "EDM", name: "Don't let me down", artist: "The Chainsmokers", length: 208 },
+    { genre: "Pop", name: "Doeses and Mimosas", artist: "Cherub", length: 323 },
+    { genre: "Hip-Hop", name: "Put It Down", artist: "Brandy", length: 248 },
+    { genre: "Alternative", name: "Explosions", artist: "Ellie Goulding", length: 243 },
+    { genre: "Soul Pop", name: "Back to Black", artist: "Amy Winehouse", length: 241 }, 
+    { genre: "Hip-Hop", name: "Idfc", artist: "Blackbear", length: 245 },
+    { genre: "Alternative Pop", name: "Off to the Races", artist: "Lana Del Ray", length: 299 }
+]}

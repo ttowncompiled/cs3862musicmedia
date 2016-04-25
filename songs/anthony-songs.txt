@@ -1,0 +1,12 @@
+{songs: [
+  { genre: "Dream Pop", name: "Midnight City", artist: "M83", length: 241 },
+  { genre: "Hip Hop/Rap", name: "Where the Baes at?", artist: "Eric D-Lux, Redfoo, Rio", length: 146},
+  { genre: "Electropop", name: "Sleepyhead", artist: "Passion Pit", length: 175 },
+  { genre: "Electronic", name: "NRG- Skrillex, Kill The Noise, Milo & Otis Remix", artist: "Duck Sauce", length: 253 },
+  { genre: "Heavy Happy", name: "Damn Son", artist: "Nightcore", length: 146 },
+  { genre: "Dubstep", name: "I Can't Stop", artist: "Flux Pavilion", length: 306 },
+  { genre: "electro-R&B", name: "Who Dat Girl - feat Akon", artist: "Flo Rida", length: 201},
+  { genre: "Euphoric Hardstyle", name: "Fade Away", artist: "Jacob Tillberg", length: 179 },
+  { genre: "Eurodance", name: "All I Ever Wanted", artist: "Basshunter", length: 176 },
+  { genre: "Pop Punk", name: "Here's Your Freakin' Song", artist: "Bowling For Soup", length: 237 },
+]}

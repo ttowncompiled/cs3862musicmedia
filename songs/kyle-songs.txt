@@ -1,0 +1,12 @@
+{songs: [
+  { genre: "Freak Folk", name: "Visiting Friends", artist: "Animal Collective", length: 757 },
+  { genre: "Hip Hop", name: "I'm In It", artist: "Kanye West", length: 234 },
+  { genre: "Trip Hop", name: "Radio", artist: "The Avalanches", length: 262 },
+  { genre: "Cloud Rap", name: "Lightsaber", artist: "Yung Lean", length: 274 },
+  { genre: "Shoegaze", name: "When You Sleep", artist: "My Bloody Valentine", length: 252 },
+  { genre: "Progressive Metal", name: "Skylines", artist: "Painted in Exile", length: 586 },
+  { genre: "Math Rock", name: "After Image", artist: "Toe", length: 239 },
+  { genre: "Hip Hop", name: "Protect Ya Neck", artist: "Wu-Tang clan", length: 291 },
+  { genre: "Metalcore", name: "Everything will rust", artist: "Misery Signals", length: 246 },
+  { genre: "Experimental Hip Hop", name: "No Love", artist: "Death Grips", length: 303 },
+]}

@@ -7,9 +7,13 @@ import { FirebaseService } from '../lib/firebase.service';
 })
 export class SongsComponent {
     
-    trackInfo: Array<any> = [];
+    trackInfo: any[] = [];
 
     constructor(public fs: FirebaseService) {
+        this.loadMusic();
+    }
+    
+    loadMusic(): void {
         this.fs.watchMusic().subscribe( (music: any[]) => this.trackInfo = music );
     }
 

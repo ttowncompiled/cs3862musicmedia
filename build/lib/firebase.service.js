@@ -29,13 +29,16 @@ System.register(['angular2/core', 'rxjs/Rx'], function(exports_1, context_1) {
                     var _this = this;
                     return Rx_1.Observable.create(function (observer) {
                         _this.dataRef.child(FirebaseService.MUSIC).on(FirebaseService.VAL, function (snapshot) {
-                            observer.next(snapshot.val());
+                            var val = snapshot.val();
+                            if (!val) {
+                                observer.next([]);
+                            }
+                            observer.next(Object.keys(val).map(function (key) { return val[key]; }));
                         });
-                    })
-                        .map(function (val) { return val ? val : []; });
+                    });
                 };
-                FirebaseService.MUSIC = 'music';
-                FirebaseService.VAL = 'val';
+                FirebaseService.MUSIC = 'songs';
+                FirebaseService.VAL = 'value';
                 FirebaseService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [])

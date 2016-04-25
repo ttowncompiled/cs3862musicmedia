@@ -1,0 +1,12 @@
+{songs: [
+	{ genre: "Art Rock", name: "Everybody Here is a Cloud", artist: "Cloud Cult", length: 316 },
+	{ genre: "Trance", name: "Sandstrom (Original Mix)", artist: "Darude", length: 726 },
+	{ genre: "Symphonic Metal", name: "The Poet and the Pendulum", artist: "Nightwish", length: 1357 },
+	{ genre: "Gangsta Rap", name: "X Gon' Give It To Ya", artist: "DMX", length: 339 },
+	{ genre: "Psybient", name: "Introduction", artist: "Solar Fields", length: 535 },
+	{ genre: "Nu Jazz", name: "A Cup of Coffee", artist: "DJ Okawari", length: 434 },
+	{ genre: "Trip Hop", name: "Frontier Psychiatrist", artist: "The Avalanches", length: 447 },
+	{ genre: "Symphonic Metal", name: "Wishmaster", artist: "Nightwish", length: 424 }, 
+	{ genre: "Piano Rock", name: "Spies", artist: "Coldplay", length: 518 },
+	{ genre: "Electronic Rock", name: "Civilization", artist: "Justice", length: 411 }
+]}

@@ -23,11 +23,14 @@ System.register(['angular2/core', '../lib/firebase.service'], function(exports_1
         execute: function() {
             SongsComponent = (function () {
                 function SongsComponent(fs) {
-                    var _this = this;
                     this.fs = fs;
                     this.trackInfo = [];
-                    this.fs.watchMusic().subscribe(function (music) { return _this.trackInfo = music; });
+                    this.loadMusic();
                 }
+                SongsComponent.prototype.loadMusic = function () {
+                    var _this = this;
+                    this.fs.watchMusic().subscribe(function (music) { return _this.trackInfo = music; });
+                };
                 SongsComponent = __decorate([
                     core_1.Component({
                         selector: 'songs-component',

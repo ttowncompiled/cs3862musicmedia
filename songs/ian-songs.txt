@@ -1,0 +1,13 @@
+{ songs: [
+    { genre: "Soul", name: "Hello", artist: "Adele", length: 295 },
+    { genre: "Indie Folk", name: "Matilda", artist: "alt-j", length: 228 },
+    { genre: "Folk", name: "Big Jet Plane", artist: "Angus and Julia Stone", length: 222 },
+    { genre: "Electronic Rock", name: "Still Alive", artist: "Jonathan Coulton", length: 176 },
+    { genre: "Indie Rock", name: "Best Day of my Life", artist: "American Authors", length: 194 },
+    { genre: "Country", name: "Sweet Louise", artist: "The Belle Brigade", length: 187 },
+    { genre: "Indie Rock", name: "Hollow Tune", artist: "Brick and Mortar", length: 224 },
+    { genre: "Alternative Rock", name: "The Distance", artist: "Cake", length: 180 },
+    { genre: "Indie Rock", name: "First", artist: "Cold War Kids", length: 200 },
+    { genre: "Indie Rock", name: "Little Wanderer", artist: "Death Cab for Cutie", length: 259 }
+  ]
+};

@@ -1,0 +1,12 @@
+{songs: [
+	{genre:"Classic Rock", name:"Surrender To Me", artist:"Boston", length:333},
+	{genre:"Classic Rock", name:"Learn To Fly", arist:"Foo Fighters", length:235},
+	{genre:"Electro House", name:"Pyramids (ft. Sanjin)", artist:"DVBBS, Dropgun", length:197},
+	{genre:"Pop Rock", name:"Believe", artist:"Cher", length:239},
+	{genre:"Punk Rock", name:"Ocean Avenue", artist:"Yellowcard", length:198},
+	{genre:"Rap", name:"Birthday Song-Remix", artist:"Slugga Black", length:303},
+	{genre:"Pop Rap", name:"No Interruption", artist:"Hoodie ALlen", length:215},
+	{genre:"Pop Rap", name:"Whatchu Waiting For", artist:"Kevin Rudolf, Three 6 Mafia", length:316},
+	{genre:"Electro House", name:"Now That I've Found You", artist:"Martin Garrix, John & Michael", length:193},
+	{genre:"Hip-Hop", name:"Crazy", artist:"Hamburger Helper", length:173}
+]}
